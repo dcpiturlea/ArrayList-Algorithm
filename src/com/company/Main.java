@@ -7,8 +7,9 @@ public class Main {
 
     public static void main(String[] args) {
 
-        GetArrayFunction searchFunctions = new GetArrayFunction();
-        searchFunctions.ChoseTheFunction();
+       GetArrayFunction searchFunctions = new GetArrayFunction();
+       searchFunctions.ChoseTheFunction();
+
 
 
     }

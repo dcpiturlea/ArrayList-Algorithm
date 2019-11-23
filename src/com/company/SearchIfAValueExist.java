@@ -2,7 +2,7 @@ package com.company;
 
 import java.util.Scanner;
 
-public class SearchIfAValueExist {
+public class SearchIfAValueExist  extends DeleteByIndex{
     Scanner in = new Scanner(System.in);
 
     public void GetIfTheValueExist() {

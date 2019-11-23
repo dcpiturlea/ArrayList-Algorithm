@@ -23,7 +23,7 @@ public class ArrayStructures extends GetValueAtIndex{
             theArray.add((int) (Math.random() * 10) + 10) ;
     }
 
-    public void printArray() {
+    public static void printArray() {
         System.out.println("This is the Array");
         System.out.println("----------");
 
