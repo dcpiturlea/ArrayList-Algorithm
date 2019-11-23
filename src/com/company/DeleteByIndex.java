@@ -3,7 +3,7 @@ package com.company;
 import java.util.Scanner;
 import java.util.concurrent.atomic.AtomicBoolean;
 
-public class DeleteByIndex {
+public class DeleteByIndex extends AddValueInArray{
 
     public void DeteleByIndexMethod() {
         Scanner in = new Scanner(System.in);
