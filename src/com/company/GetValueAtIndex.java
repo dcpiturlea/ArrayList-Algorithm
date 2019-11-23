@@ -8,15 +8,18 @@ public class GetValueAtIndex extends SearchIfAValueExist{
     //function: you can find a value bassed on the index(input)
     public void getValueAtIndex () {
         Scanner in = new Scanner(System.in);
-        System.out.println("Please insert the index for get the value of him: ");
-        byte index = in.nextByte();
+        boolean indexOutOfBounds = false;
 
-        if (index < ArrayStructures.arraySize){
-            System.out.println(ArrayStructures.theArray[index]);
-        }
-        else{
-            System.out.println("Please insert an index from 0 to " + ArrayStructures.arraySize);
-        }
 
+        while(!indexOutOfBounds) {
+            System.out.println("Please insert the index for get the value of him: ");
+            int index = in.nextInt();
+
+            if (index < ArrayStructures.theArray.size()) {
+                indexOutOfBounds = true;
+                System.out.println("The index " + index + " have the the next value: " + ArrayStructures.theArray.get(index));
+            }
+
+        }
     }
 }

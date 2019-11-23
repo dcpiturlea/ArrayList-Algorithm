@@ -1,5 +1,6 @@
 package com.company;
 
+import java.util.ArrayList;
 import java.util.Scanner;
 
 /** 1. Define an Array with 50 values maximum
@@ -13,23 +14,22 @@ import java.util.Scanner;
 
 public class ArrayStructures extends GetValueAtIndex{
 
-    protected static int[] theArray = new int[50];
-    protected static int arraySize = 10;
+    protected static ArrayList<Integer> theArray = new ArrayList<Integer>(20);
     Scanner in = new Scanner(System.in);
 
 
     public void generateRandomArray() {
-        for (int i = 0; i < arraySize; i++)
-            theArray[i] = (int) (Math.random() * 10) + 10;
+        for (int i = 0; i < 10; i++)
+            theArray.add((int) (Math.random() * 10) + 10) ;
     }
 
     public void printArray() {
         System.out.println("This is the Array");
         System.out.println("----------");
 
-        for (int i = 0; i < arraySize; i++) {
+        for (int i = 0; i < theArray.size(); i++) {
             System.out.print(" | " + i + " | ");
-            System.out.println(theArray[i] + " | ");
+            System.out.println(theArray.get(i) + " | ");
         }
         System.out.println("----------");
     }

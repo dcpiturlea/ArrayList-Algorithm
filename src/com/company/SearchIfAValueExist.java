@@ -15,9 +15,9 @@ public class SearchIfAValueExist {
         int[] numberOfIndex = new int[20];
 
 
-        for (i = 0; i < ArrayStructures.arraySize; i++) {
+        for (i = 0; i < ArrayStructures.theArray.size(); i++) {
 
-            if (ArrayStructures.theArray[i] == theSearchValue) {
+            if (ArrayStructures.theArray.get(i) == theSearchValue) {
                 j++;
                 exist = true;
                 countNumberIfValueExist++;
