@@ -1,0 +1,13 @@
+The application consist in a Java Corre Program which have multiple classes.
+
+The main class call the method ChoseTheFunction from the class GetArrayFunction.
+This method create an object(Static Array for the moment) and the same call the methods generateRandomArray and printArray from ArrayStructures(by inheritance). 
+This two methods create an array and populates it with random numbers and the second method print the array("graphically").
+
+The class GetArrayFunction(ChoseTheFunction method) have un swhitch which is called by main class. 
+With his help the user can chose multiples functions.
+For now the application have only two functions(methods with wich the user can manipulate the Array):
+
+  1. The user can search if a value exist in the arraylist. If yes, the application print how many time and the position where the value is.
+If the value does not exist in the array the app print that.
+  2. The user can search a value depinding on the index the user enters
