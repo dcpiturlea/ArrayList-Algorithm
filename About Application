@@ -1,7 +1,7 @@
 The application consist in a Java Corre Program which have multiple classes.
 
 The main class call the method ChoseTheFunction from the class GetArrayFunction.
-This method create an object(Static Array for the moment) and the same call the methods generateRandomArray and printArray from ArrayStructures(by inheritance). 
+This method create an ArrayList and the same call the methods generateRandomArray and printArray from ArrayStructures(by inheritance). 
 This two methods create an array and populates it with random numbers and the second method print the array("graphically").
 
 The class GetArrayFunction(ChoseTheFunction method) have un swhitch which is called by main class. 
